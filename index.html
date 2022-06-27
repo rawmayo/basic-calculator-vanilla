@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container d-flex ai-center jc-center">
+      <div class="calculator">
+        <div class="calculation">
+          <div class="to-calculate hide">
+            <div id="first-num" class="first-num"></div>
+            <div
+              id="operation"
+              style="margin: 0 0.35rem"
+              class="operand pinkish"
+            ></div>
+            <div id="second-num" class="second-num"></div>
+          </div>
+          <div id="value" class="value">0</div>
+        </div>
+        <div class="operation">
+          <div class="grid grid-col-4">
+            <button data-action="clear" class="box cyan">AC</button>
+            <button data-action="increment" class="box cyan">
+              <i class="fa-solid fa-plus-minus"></i>
+            </button>
+            <button data-action="percent" id="percent" class="box cyan">
+              <i class="fa-solid fa-percent"></i>
+            </button>
+            <button data-action="divide" id="divide" class="box pinkish">
+              <i class="fa-solid fa-divide"></i>
+            </button>
+            <button data-action="7" class="box white">
+              <i class="fa-solid fa-7"></i>
+            </button>
+            <button data-action="8" class="box white">
+              <i class="fa-solid fa-8"></i>
+            </button>
+            <button data-action="9" class="box white">
+              <i class="fa-solid fa-9"></i>
+            </button>
+            <button data-action="multiply" class="box pinkish">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button data-action="4" class="box white">
+              <i class="fa-solid fa-4"></i>
+            </button>
+            <button data-action="5" class="box white">
+              <i class="fa-solid fa-5"></i>
+            </button>
+            <button data-action="6" class="box white">
+              <i class="fa-solid fa-6"></i>
+            </button>
+            <button data-action="subtract" class="box pinkish">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <button data-action="1" class="box white">
+              <i class="fa-solid fa-1"></i>
+            </button>
+            <button data-action="2" class="box white">
+              <i class="fa-solid fa-2"></i>
+            </button>
+            <button data-action="3" class="box white">
+              <i class="fa-solid fa-3"></i>
+            </button>
+            <button data-action="add" class="box pinkish">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button data-action="reset" class="box white">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button data-action="0" class="box white">
+              <i class="fa-solid fa-0"></i>
+            </button>
+            <button data-action="dot" class="box white">.</button>
+            <button data-action="equals" class="box pinkish">
+              <i class="fa-solid fa-equals"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>

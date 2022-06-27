@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* Root */
+:root {
+  --dark-grey: #22252d;
+  --grey-1: #2a2d37;
+  --grey-2: #282b33;
+  --cyan: #2dbca3;
+  --pinkish: #ac6368;
+  --dirty-white: #e8e8e8;
+  --white: #fff;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--dirty-white);
+  color: var(--white);
+  height: 100vh;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+/* Utilities */
+.d-flex {
+  display: flex;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  height: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.pinkish {
+  color: var(--pinkish);
+}
+
+.white {
+  color: var(--white);
+}
+
+.hide {
+  display: none;
+}
+
+/* Calculator */
+.calculator {
+  background-color: var(--dark-grey);
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.calculation {
+  height: 140px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0.5rem 1.5rem;
+}
+
+.value {
+  font-size: 2rem;
+}
+
+.operation {
+  padding: 2rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: var(--grey-1);
+}
+
+.box {
+  border: none;
+  background-color: var(--grey-2);
+  border: 1px solid var(--dark-grey);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  font-weight: 500;
+}
+
+.box:hover {
+  background-color: #313441;
+}
